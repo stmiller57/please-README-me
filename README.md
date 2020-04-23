@@ -9,7 +9,7 @@
   ### Installation
    Please run npm install to handle dependencies.
   ### Contributing
-    All contributions to this project are welcome.
+   All contributions to this project are welcome.
   ### License
   MIT License Copyright (c) [2020] [Stephen Miller]
   ### Creator information
