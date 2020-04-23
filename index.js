@@ -32,13 +32,13 @@ function askQuestions() {
         },
         {
             type: "input",
-            name: "technologies",
-            message: "What technologies does your project use?"
+            name: "use",
+            message: "What is the use for this project?"
         },
         {
             type: "input",
-            name: "license",
-            message: "What type of license should your project have?"
+            name: "technologies",
+            message: "What technologies does your project use?"
         },
         {
             type: "input",
@@ -49,6 +49,11 @@ function askQuestions() {
             type: "input",
             name: "contribute",
             message: "What does the user need to know about contributing to the repo?"
+        },
+        {
+            type: "input",
+            name: "license",
+            message: "What type of license should your project have?"
         }
     ]);
 }
@@ -57,18 +62,21 @@ function generateMarkdown(responses) {
     return `# ${responses.projectName}
   ## Project description
   ${responses.description}
-  ## Technologies used
+  ## Table of contents
+  ### Use
+  ${responses.use}
+  ### Technologies used
   ${responses.technologies}
-  ## Installation
+  ### Installation
   ${responses.commandInstall}
-  ## Contributing
+  ### Contributing
   ${responses.contribute}
-  ## License
+  ### License
   ${responses.license}
   ### Creator information
-  ${responses.username}\n
-  ${responses.email}\n
-  ${responses.urlAddress}
+  GitHub username: ${responses.username}\n
+  Email: ${responses.email}\n
+  Github repository: ${responses.urlAddress}
   `;
 }
 module.exports = generateMarkdown;
