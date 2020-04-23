@@ -59,15 +59,15 @@ function generateMarkdown(responses) {
   ${responses.description}
   ## Technologies used
   ${responses.technologies}
-  ## Contributing
-  ${responses.contribute}
   ## Installation
   ${responses.commandInstall}
+  ## Contributing
+  ${responses.contribute}
   ## License
   ${responses.license}
   ### Creator information
-  ${responses.username}
-  ${responses.email}
+  ${responses.username}\n
+  ${responses.email}\n
   ${responses.urlAddress}
   `;
 }

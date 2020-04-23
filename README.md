@@ -1,14 +1,18 @@
-# Please README me
+# please-README-me
   ## Project description
-  This project called for a way to generate a README.md file via node.JS. Why spend excess time thinking of a way to break down your next README file when this program can set up the document for you? 
-  ## Contributing
-  Consider this an open-source project. Anyone who would like to tweak or improve the code is welcome to do so. 
+  All applications needs quality documentation. This project uses the command line to ask users questions about their GitHub projects. Their responses are then logged and written to a README.md file. The generated README gives the user a starting point for documenting what her application does, how to use it and how to contribute to it. 
+  ## Technologies used
+   The bulk of the program is written in JavaScript. It is executed by running node.JS.
   ## Installation
-  Use npm install to add any needed dependencies.
+  Please run npm install to handle dependencies
+  ## Contributing
+  All contributions to this project are welcome.
   ## License
-  Licensed under the MIT license.
+  MIT License Copyright (c) [2020] [Stephen Miller]
   ### Creator information
   stmiller57
-  stmiller57@gmail.com
+
+  samiller57@gmail.com
+
   https://github.com/stmiller57/please-README-me
   
