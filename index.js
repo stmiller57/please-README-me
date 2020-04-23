@@ -32,6 +32,11 @@ function askQuestions() {
         },
         {
             type: "input",
+            name: "technologies",
+            message: "What technologies does your project use?"
+        },
+        {
+            type: "input",
             name: "license",
             message: "What type of license should your project have?"
         },
@@ -39,16 +44,6 @@ function askQuestions() {
             type: "input",
             name: "commandInstall",
             message: "What command should be run to install dependencies?"
-        },
-        {
-            type: "input",
-            name: "commandTest",
-            message: "What command should be run to run tests?"
-        },
-        {
-            type: "input",
-            name: "userKnowledge",
-            message: "What does the user need to know about using the repo?"
         },
         {
             type: "input",
@@ -62,15 +57,20 @@ function generateMarkdown(responses) {
     return `# ${responses.projectName}
   ## Project description
   ${responses.description}
-  ### Nitty-gritty details
-  ${responses.license}
-  ${responses.commandInstall}
-  ${responses.commandTest}
-  ${responses.userKnowledge}
+  ## Technologies used
+  ${responses.technologies}
+  ## Contributing
   ${responses.contribute}
+  ## Installation
+  ${responses.commandInstall}
+  ## License
+  ${responses.license}
+  ### Creator information
+  ${responses.username}
+  ${responses.email}
+  ${responses.urlAddress}
   `;
 }
-
 module.exports = generateMarkdown;
 
 

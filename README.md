@@ -1,10 +1,14 @@
 # Please README me
   ## Project description
-  The purpose of this project was to create a README.md generator via node.JS. 
-  ### Nitty-gritty details
-  MIT
-  npm install
-  No tests are needed at this time.
-  Beats me
-  Any contributions and improvements to the code are welcome.
+  This project called for a way to generate a README.md file via node.JS. Why spend excess time thinking of a way to break down your next README file when this program can set up the document for you? 
+  ## Contributing
+  Consider this an open-source project. Anyone who would like to tweak or improve the code is welcome to do so. 
+  ## Installation
+  Use npm install to add any needed dependencies.
+  ## License
+  Licensed under the MIT license.
+  ### Creator information
+  stmiller57
+  stmiller57@gmail.com
+  https://github.com/stmiller57/please-README-me
   
