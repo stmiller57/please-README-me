@@ -60,25 +60,25 @@ function askQuestions() {
 
 function generateMarkdown(responses) {
     return `# ${responses.projectName}
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  ## Project description
-  ${responses.description}
-  ## Table of contents
-  ### Use
-  ${responses.use}
-  ### Technologies used
-  ${responses.technologies}
-  ### Installation
-  ${responses.commandInstall}
-  ### Contributing
-  ${responses.contribute}
-  ### License
-  ${responses.license}
-  ### Creator information
-  GitHub username: ${responses.username}\n
-  Email: ${responses.email}\n
-  Github repository: ${responses.urlAddress}
-  `;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Project description
+${responses.description}
+## Table of contents
+### Use
+${responses.use}
+### Technologies used
+${responses.technologies}
+### Installation
+${responses.commandInstall}
+### Contributing
+${responses.contribute}
+### License
+${responses.license}
+### Creator information
+GitHub username: ${responses.username}\n
+Email: ${responses.email}\n
+Github repository: ${responses.urlAddress}
+`;
 }
 module.exports = generateMarkdown;
 
