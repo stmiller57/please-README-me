@@ -60,6 +60,7 @@ function askQuestions() {
 
 function generateMarkdown(responses) {
     return `# ${responses.projectName}
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Project description
   ${responses.description}
   ## Table of contents
